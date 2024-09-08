@@ -1,0 +1,110 @@
+{
+    "title" : "Bvlevar 21 Apto 1002",
+    "images" : {
+        "Full Kitchen": [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Kitchen%2FIMG_20240514_123638552_HDR.jpg?alt=media&token=8489dd9b-28df-4b3c-8f35-4dbc5a151e19",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Kitchen%2FIMG_20240514_124835982.jpg?alt=media&token=e13d27e7-ba3a-48a4-85e2-027ef582aa0b",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Kitchen%2FIMG_20240514_124917354.jpg?alt=media&token=99fa8c93-ba87-46ca-8740-a00e35c6ef7c",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Kitchen%2FIMG_20240514_124944480.jpg?alt=media&token=64ab931a-3094-45a0-b896-9f113fb8251a",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Kitchen%2FIMG_20240514_125008774.jpg?alt=media&token=e0e33bf0-1392-4355-a15b-035ae7b4d394"
+        ],
+        "Bedroom" : [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_124521201.jpg?alt=media&token=77a32a43-3827-4258-b4f8-35b6d7eefdc0",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_124423502.jpg?alt=media&token=88b87356-53a1-4263-8e2e-5fe37e4d6b35",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_124240642.jpg?alt=media&token=b9a2f3d4-0f1a-4b23-9dcd-a690c087f124",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_123956859.jpg?alt=media&token=befdd034-8dd6-4a62-bd68-e7a91dff652c",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_123848463.jpg?alt=media&token=13b27a83-2cdc-456e-b39c-201ebc273b20",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBedroom%2FIMG_20240514_123729744.jpg?alt=media&token=6853fccd-883e-4dfb-8c2b-e7a9174eeb56"
+        ],
+        "Full Bathroom" : [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Bathroom%2FIMG_20240514_123431860.jpg?alt=media&token=40dc9632-f722-427e-8d3c-377f30df1085",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Bathroom%2FIMG_20240514_123259640.jpg?alt=media&token=28c90459-480a-4bbe-89e4-27056f2266e9",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FFull%20Bathroom%2FIMG_20240514_123244245.jpg?alt=media&token=01b25dde-d65e-4df9-a72a-6b4e40166d8a"
+        ],
+        "Workspace" : [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FWorkspace%2FIMG_20240514_124202519.jpg?alt=media&token=50a5dd98-beb0-4983-9c16-524d3354358b"
+        ], 
+        "Balcony" : [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBalcony%2FIMG_20240514_125210360.jpg?alt=media&token=85ba7aea-0737-4367-8dbf-ff540cb2738e",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBalcony%2FIMG_20240514_125504029.jpg?alt=media&token=7c4a0582-5273-4d4e-bb31-9fff040bb872",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FBalcony%2FIMG_20240514_125210360.jpg?alt=media&token=85ba7aea-0737-4367-8dbf-ff540cb2738e"
+        ],
+        "Laundry Area" : [
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FLaundry%20Area%2FIMG_20240514_125057948.jpg?alt=media&token=2f7c6644-8e74-4fd4-8806-9c227c8a863d",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FLaundry%20Area%2FIMG_20240514_125035655.jpg?alt=media&token=315bde2d-8a28-4234-a1c9-e53c58945ece",
+            "https://firebasestorage.googleapis.com/v0/b/booking-app-da364.appspot.com/o/bvlevar1002%2FLaundry%20Area%2FIMG_20240514_125142422.jpg?alt=media&token=651fb4fa-23bd-4b36-89aa-915e9cc9f5f7"
+        ]
+    },
+    "description" : "Entire loft in Bucaramanga, Colombia",
+    "meta" : ["2 guests", "1 bedroom", "1 bath"],
+    "characteristics" : {
+        "Self check-in" : "Check yourself in with the lockbox.",
+        "Exceptional check-in experience" : "Recent guests gave the check-in process a 5-star rating.",
+        "Furry friends welcome" : "Bring your pets along for the stay."
+    },
+    "about" : "Apartment overlooking the city of Bucaramanga and its airport, located on the 10th floor of the Bvlevar 21 set 5 minutes from San Francisco Park. \n It has a double bed, desk for study or work, TV, bathroom, washing machine, refrigerator, oven, stove and closet \n It has a blind and blackout. \n Parqueadero not included, although one can be rented separately. \n Registration number \n 209444",
+    "offers" : {
+        "Bedroom and laundry" : {
+            "Washer" : "TODO: INSERT SVG here",
+            "Iron" : "TODO: INSERT SVG here"
+        },
+        "Entertainment" : {
+            "TV" : "TODO: INSERT SVG here"
+        },
+        "Home safety" : {
+            "Exterior security cameras on property" : "TODO: INSERT SVG here"
+        },
+        "Internet and office" : {
+            "Wifi" : "TODO: INSERT SVG here",
+            "Dedicated workspace": "TODO: INSERT SVG here"
+        },
+        "Kitchen and dining" : {
+            "Kitchen" : "TODO: INSERT SVG here"
+        },
+        "Outdoor" : {
+            "Outdoor dining area" : "TODO: INSERT SVG here",
+            "BBQ grill" : "TODO: INSERT SVG here"
+        },
+        "Services" : {
+            "Pets allowed": "TODO: INSERT SVG here",
+            "Self check-in" : "TODO: INSERT SVG here",
+            "Lockbox" : "TODO: INSERT SVG here"
+        },
+        "Not included" : {
+            "Dryer" : "TODO: INSERT SVG here",
+            "Air conditioning" : "TODO: INSERT SVG here",
+            "Essentials" : "TODO: INSERT SVG here",
+            "Smoke alarm": "TODO: INSERT SVG here",
+            "Carbon monoxide alarm": "TODO: INSERT SVG here",
+            "Heating" : "TODO: INSERT SVG here",
+            "Hot water" : "TODO: INSERT SVG here"
+        }
+    },
+    "calendar" : {},
+    "maps" : {
+        "address" : "Bucaramanga, Santander, Colombia",
+        "location" : "TODO: INSERT coordinates here"
+    },
+    "host" : {
+       "name" : "Nubia Moreno",
+       "traits" : {
+            "work" : "Pensionada",
+            "languages" : "Ingles y Español",
+            "Pets" : "Mi gata Yambi",
+            "likes" : "I spend too much time in travels",
+            "obsession" : "Travel",
+            "live" : "Spain"
+       },
+       "photo" : "TODO: INSERT SVG here"
+    },
+    "links" : {
+        "Airbnb" : {
+            "link" : "https://www.airbnb.com/rooms/1156623638372071033?guests=1&adults=1&s=67&unique_share_id=a1707dd3-d11e-4c70-9c3c-4d141053a074",
+            "icon" : "https://www.vectorlogo.zone/logos/airbnb/airbnb-icon.svg"
+        },
+        "Vrbo" : {
+            "link" : "https://www.vrbo.com/4177097?dateless=true",
+            "icon" : "https://media.united.com/assets/m/74bcaca278c65e82/original/vrbo-3x.png"
+        }
+    }
+}

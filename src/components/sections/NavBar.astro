@@ -1,0 +1,69 @@
+---
+import Section from '@/components/Section.astro'
+---
+
+<Section>
+    <header>
+        <nav class="navbar">
+            <ul class="links-container">
+                <li class="link-item"><a href="#">Travels</a> </li>
+                <li class="link-item"><a href="#">Explore</a> </li>
+
+                <li class="link-item">
+                    <a href="#">
+                        <img src="/public/profile.png" class="logo" alt="logo">
+                    </a>
+                </li>
+
+                <li class="link-item"><a href="#">Services</a> </li>
+                <li class="link-item"><a href="#">Book </a> </li>
+            </ul>
+        </nav>
+    </header>
+</Section>
+
+<script>
+
+
+</script>
+
+<style>
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100px;
+        padding: 20px 30px
+    }
+
+    .navbar.bg {
+        background: #161813;
+    }
+
+    .links-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .logo {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .link-item {
+        margin: 0 30px;
+        transform: .5s;
+    }
+
+    .link-item a {
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+</style>
