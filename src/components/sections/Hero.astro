@@ -1,26 +1,179 @@
 ---
-import {basics, languages} from '@cv'
 import {title, images, description, meta, characteristics} from '@info'
 import Section from '@/components/Section.astro'
-import Mail from '@/icons/Mail.astro'
-import Phone from '@/icons/Phone.astro'
-import X from '@/icons/X.astro'
-import LinkedIn from '@/icons/LinkedIn.astro'
-import GitHub from '@/icons/GitHub.astro'
-import Discord from '@/icons/Discord.astro'
-import WorldMap from '@/icons/WorldMap.astro'
-import { imageConfig } from 'astro:assets'
+
+const image = images.Balcony[2];
+const balconyImages = images.Balcony;
 ---
+
+
 
 <Section>
 
+    <main class="hero-section" id="hero-section">
+
+        <div class="background">
+            <img src={image} class="background-image" alt="hero-section-image">
+            <div class="slider-grid">
+                <div class="grid-item hide"></div>
+                <div class="grid-item hide"></div>
+                <div class="grid-item hide"></div>
+                <div class="grid-item hide"></div>
+                <div class="grid-item hide"></div>
+                <div class="grid-item hide"></div>
+            </div>
+        </div>
+
+        <div class="hero-section-content">
+            <h1 class="hero-section-title">{title}</h1>
+            <p class="hero-section-sub-heading">{description}</p>
+        </div>
+
+        <img src="/public/down arrow.png" class="scroll-down-icon" alt="scroll down">
+ 
+    </main>
+
 </Section>
 
-<script>
+<script define:vars={{balconyImages}}>
 
+    let slider = document.querySelector('.background-image');
+    let sliderGridItems = [...document.querySelectorAll('.grid-item')]  
+
+    let currentImage = 0;
+
+    setInterval(() => {
+        changeSliderImage();
+    }, 5000)
+
+    const changeSliderImage = () => {
+        sliderGridItems.map((gridItems, index) => {
+            setTimeout(() => {
+
+                gridItems.classList.remove('hide');
+                
+                setTimeout(() => {
+                    if (index == sliderGridItems.length - 1) {
+                        if (currentImage >= balconyImages.length - 1) {
+                            currentImage = 0;
+                        } else {
+                            currentImage++;
+                        }
+
+                        slider.src = balconyImages[currentImage];
+
+                        sliderGridItems.map((item, i) => {
+                            setTimeout(() => {
+                                item.classList.add('hide');
+                            }, i * 100)
+                        })
+                    }
+                }, 100)
+
+            }, index * 100);
+        })
+    }
 
 </script>
 
 <style>
 
+    .hero-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    .background::before, .background::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .background::before {
+        top: 0;
+        left: 0;
+        background: var(--gradient-top);
+    }
+
+    .background::after {
+        bottom: 0;
+        left: 0;
+        background: var(--gradient-bottom);
+    }
+
+    .slider-grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        width: 100%;
+        height: 100%;
+        background: #161813;
+        opacity: 1;
+        transition: .7s;
+        pointer-events: none;
+    }
+
+    .grid-item.hide {
+        opacity: 0;
+    }
+    
+    .hero-section-title {
+        font-family: 'suse-font';
+        font-weight: 300;
+        font-size: 80px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .hero-section-sub-heading {
+        text-align: center;
+        text-transform: capitalize;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .scroll-down-icon {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        animation: down ease 1.5s infinite;
+    }
+
+    @keyframes down {
+        from { bottom: 10%; }
+        to { bottom: 8%; }
+    }
 </style>
