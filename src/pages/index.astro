@@ -2,14 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 
 import Explore from '@/components/sections/Explore.astro';
-
 import Hero from '@/components/sections/Hero.astro'
-import About from '@/components/sections/About.astro'
-import Experience from '@/components/sections/Experience.astro'
-import Education from '@/components/sections/Education.astro'
-import Certifications from '@/components/sections/Certifications.astro'
-import Skills from '@/components/sections/Skills.astro'
-import Projects from '@/components/sections/Projects.astro'
 
 import KeyboardManager from '@/components/KeyboardManager.astro'
 
@@ -40,16 +33,24 @@ import { title } from '@info'
 			</header>
 
 			<Explore />
-			<!--  <About />
-			<Experience />
-			<Projects />
-			<Education />
-			<Skills />
-			<Certifications/>-->
 		</block>
 	</main>
 	<KeyboardManager />
 </Layout>
+
+<script>
+
+	const navbar = document.querySelector('.navbar');
+
+	window.addEventListener('scroll', () => {
+		if (scrollY >= 188) {
+			navbar?.classList.add('bg');
+		} else {
+			navbar?.classList.remove('bg');
+		}
+	})
+
+</script>
 
 <style>
 
@@ -64,7 +65,8 @@ import { title } from '@info'
         z-index: 9;
         width: 100%;
         height: 100px;
-        padding: 20px 30px
+        padding: 20px 30px;
+		transition: .5s;
     }
 
     .navbar.bg {
