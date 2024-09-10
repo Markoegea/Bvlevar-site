@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 
 import Explore from '@/components/sections/Explore.astro';
 import Hero from '@/components/sections/Hero.astro'
+import Services from '@/components/sections/Services.astro';
 
 import KeyboardManager from '@/components/KeyboardManager.astro'
 
@@ -25,17 +26,17 @@ import { title } from '@info'
 							</a>
 						</li>
 		
-						<li class="link-item"><a href="#">Services</a> </li>
+						<li class="link-item"><a href="#services">Services</a> </li>
 						<li class="link-item"><a href="#">Book </a> </li>
 					</ul>
 				</nav>
 				<Hero />
 			</header>
-
 			<Explore />
+			<Services />
 		</block>
 	</main>
-	<KeyboardManager />
+	<!-- <KeyboardManager /> -->
 </Layout>
 
 <script>

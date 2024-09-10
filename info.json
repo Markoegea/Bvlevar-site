@@ -45,39 +45,37 @@
     "about" : "Apartment overlooking the city of Bucaramanga and its airport, located on the 10th floor of the Bvlevar 21 set 5 minutes from San Francisco Park. \n It has a double bed, desk for study or work, TV, bathroom, washing machine, refrigerator, oven, stove and closet \n It has a blind and blackout. \n Parqueadero not included, although one can be rented separately.",
     "offers" : {
         "Bedroom and laundry" : {
-            "Washer" : "TODO: INSERT SVG here",
-            "Iron" : "TODO: INSERT SVG here"
+            "Washer" : "src/icons/Washer.svg",
+            "Iron" : "src/icons/Iron.svg"
         },
         "Entertainment" : {
-            "TV" : "TODO: INSERT SVG here"
+            "TV" : "src/icons/TV.svg"
         },
         "Home safety" : {
-            "Exterior security cameras on property" : "TODO: INSERT SVG here"
+            "Exterior security cameras on property" : "src/icons/Camera.svg"
         },
         "Internet and office" : {
-            "Wifi" : "TODO: INSERT SVG here",
-            "Dedicated workspace": "TODO: INSERT SVG here"
+            "Wifi" : "src/icons/Wifi.svg",
+            "Dedicated workspace": "src/icons/Workspace.svg"
         },
         "Kitchen and dining" : {
-            "Kitchen" : "TODO: INSERT SVG here"
+            "Kitchen" : "src/icons/Kitchen.svg"
         },
         "Outdoor" : {
-            "Outdoor dining area" : "TODO: INSERT SVG here",
-            "BBQ grill" : "TODO: INSERT SVG here"
+            "Outdoor dining area" : "src/icons/Outdoors.svg",
+            "BBQ grill" : "src/icons/BBQ.svg"
         },
         "Services" : {
-            "Pets allowed": "TODO: INSERT SVG here",
-            "Self check-in" : "TODO: INSERT SVG here",
-            "Lockbox" : "TODO: INSERT SVG here"
+            "Pets allowed": "src/icons/Pets.svg",
+            "Lockbox" : "src/icons/Safebox.svg"
         },
         "Not included" : {
-            "Dryer" : "TODO: INSERT SVG here",
-            "Air conditioning" : "TODO: INSERT SVG here",
-            "Essentials" : "TODO: INSERT SVG here",
-            "Smoke alarm": "TODO: INSERT SVG here",
-            "Carbon monoxide alarm": "TODO: INSERT SVG here",
-            "Heating" : "TODO: INSERT SVG here",
-            "Hot water" : "TODO: INSERT SVG here"
+            "Dryer" : "src/icons/Dryer.svg",
+            "Air conditioning" : "src/icons/AirConditioning.svg",
+            "Smoke alarm": "src/icons/SmokeAlarm.svg",
+            "Carbon monoxide alarm": "src/icons/CarbonMonoxide.svg",
+            "Heating" : "src/icons/Heating.svg",
+            "Hot water" : "src/icons/HotWater.svg"
         }
     },
     "calendar" : {},
