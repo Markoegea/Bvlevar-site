@@ -1,0 +1,106 @@
+---
+import Section from '@/components/Section.astro'
+import {characteristics, offers} from '@info'
+
+---
+
+<Section>
+
+    <div class="book-section" id="booknow">
+        <div class="book-content">
+                <h1 class="book-now-title">Book here now!</h1>
+                <p class="book-now-text">Give yourself and your partner a peacefull and wonderful room to enjoy.</p>
+                <a href="https://www.airbnb.com/rooms/1156623638372071033?guests=1&adults=1&s=67&unique_share_id=2e6a92f4-6268-4770-9427-53f33c891c0c" target="_blank" rel="noopener noreferrer" class="book-now"> Book Now in Airbnb</a>
+        </div>
+        <div class="bg-circle-2"></div>
+        <img src="src/icons/Apartment.png" class="book-now-img" alt="Apartment">
+    </div>
+
+</Section>
+
+<script>
+
+
+</script>
+
+<style>
+
+    .book-section {
+        position: relative;
+        display: flex;
+        padding: 0 10vw;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        gap: 30px;
+    }
+
+    .book-now-img {
+        position: absolute;
+        width: 50%;
+        right: 0;
+    }
+
+    .book-content {
+        width: 50%;
+        color: #fff;
+    }
+
+    .book-now-title {
+        font-size: 50px;
+        font-weight: 300;
+        width: 300px;
+    }
+
+    .book-now-text {
+        width: 300px;
+        opacity: 0.5;
+        line-height: 25px;
+        margin: 30px 0;
+    }
+
+    .book-now {
+        position: relative;
+        padding: 20px 40px;
+        outline: none;
+        border: none;
+        background: #FF5A60;
+        text-transform: capitalize;
+        color: #fff;
+        border-radius: 40px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 18px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .book-now::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -30px;
+        width: 20px;
+        height: 200%;
+        background: #161813;
+        opacity: .2;
+        transform: rotate(5deg);
+        transition: .5s;
+    }
+
+    .book-now:hover::before {
+        left: 100%;
+    }
+
+    .bg-circle-2 {
+        z-index: -1;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: var(--sphere-gradient-two);
+        left: -125px;
+        bottom: -100px
+    }
+
+</style>
