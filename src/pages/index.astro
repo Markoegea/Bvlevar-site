@@ -4,6 +4,7 @@ import Layout from '@/layouts/Layout.astro';
 import Explore from '@/components/sections/Explore.astro';
 import Hero from '@/components/sections/Hero.astro'
 import Services from '@/components/sections/Services.astro';
+import Rooms from '@/components/sections/Rooms.astro';
 
 import KeyboardManager from '@/components/KeyboardManager.astro'
 
@@ -17,7 +18,7 @@ import { title } from '@info'
 			<header>
 				<nav class="navbar">
 					<ul class="links-container">
-						<li class="link-item"><a href="#">Travels</a> </li>
+						<li class="link-item"><a href="#Rooms">Rooms</a> </li>
 						<li class="link-item"><a href="#explore-section">Explore</a> </li>
 		
 						<li class="link-item">
@@ -34,6 +35,7 @@ import { title } from '@info'
 			</header>
 			<Explore />
 			<Services />
+			<Rooms />
 		</block>
 	</main>
 	<!-- <KeyboardManager /> -->

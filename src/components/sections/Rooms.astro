@@ -1,0 +1,64 @@
+---
+import Section from '@/components/Section.astro'
+import {images} from '@info'
+---
+
+<Section>
+
+    <div class="rooms-section" id="Rooms">
+
+        <div class="bg-circle"></div>
+
+        <div class="travel-grid" id="travel">
+            {
+                Object.entries(images).map(([name, urls]) => {
+                    let newUrls = urls.slice(1); // Removes the first element
+                    return newUrls.map((imageUrl) => (
+                        <img src={imageUrl} class="house-img" alt={name}>    
+                    )) 
+                })
+            }
+        </div>
+
+    </div>
+
+</Section>
+
+<script>
+
+
+</script>
+
+<style>
+
+    .rooms-section {
+        color: #ffffff;
+        padding: 10px 12vw;
+    }
+
+    .travel-grid {
+        width: 100%;
+        columns: 3;
+        column-gap: 20px;
+        margin-top: 200px;
+    }
+
+    .travel-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .bg-circle {
+        z-index: -1;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: var(--sphere-gradient-one);
+        right: -250px;
+    }
+
+</style>
