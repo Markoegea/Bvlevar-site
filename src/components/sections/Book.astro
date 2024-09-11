@@ -101,4 +101,36 @@ import Section from '@/components/Section.astro'
         bottom: -100px
     }
 
+    @media screen and (max-width: 996px) {
+        .book-now-img {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 798px) {
+        .book-section {
+            height: auto;
+            padding: 80px 10vw;
+        }
+
+        .bg-circle-2 {
+            z-index: -2;
+        }
+
+        .book-now-img {
+            width: 100%;
+            opacity: 0.5 !important;
+        }
+
+        .book-content {
+            width: 100%;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .book-now-title, .book-now-text{
+            width: 100%;
+        }
+    }
+
 </style>

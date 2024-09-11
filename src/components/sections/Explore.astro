@@ -126,4 +126,34 @@ const sectionTitle = meta.join(" • ")
         background-size: contain;
     }
 
+    @media screen and (max-width: 996px) {
+        .tour-container {
+            height: 900px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        .tour-card:last-child {
+            grid-column: span 1;
+        }
+
+        .tour-card:nth-last-child(3) {
+            grid-row: span 2;
+        }
+    }
+
+    @media screen and (max-width: 798px) {
+        .tour-container {
+            height: auto;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .tour-card {
+            grid-row: auto !important;
+            grid-column: auto !important;
+            height: 400px;
+        }
+    }
+
 </style>

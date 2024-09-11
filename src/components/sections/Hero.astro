@@ -176,4 +176,25 @@ const balconyImages = images.Balcony;
         from { bottom: 10%; }
         to { bottom: 8%; }
     }
+
+    @media screen and (max-width: 996px) {
+		.hero-section-title {
+			font-size: 60px 
+		}
+    }
+
+    @media screen and (max-width: 798px) {
+		.hero-section-title {
+			font-size: 50px 
+		}
+
+        .slider-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .hero-section-sub-heading {
+            font-size: 16px;
+        }
+    }
 </style>
