@@ -1,6 +1,6 @@
 ---
 import Section from '@/components/Section.astro'
-import {characteristics, offers} from '@info'
+import {offers} from '@info'
 
 ---
 
@@ -9,7 +9,6 @@ import {characteristics, offers} from '@info'
     <div class="services-section" id="services">
 
         <h1 class="section-title">Why Us ?</h1>
-        <p class="section-para">{characteristics['Self check-in']}</p>
 
         <div class="services-grid">
             {
@@ -61,6 +60,7 @@ import {characteristics, offers} from '@info'
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
+        margin-top: 20px;
     }
 
     .service-card {
@@ -129,6 +129,10 @@ import {characteristics, offers} from '@info'
 
         .services-grid {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        .service-card {
+            margin-top: 0px;
         }
 
         .service-card:nth-child(2) {

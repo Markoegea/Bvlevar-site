@@ -135,6 +135,7 @@ import Section from '@/components/Section.astro'
         }
 
         .bg-circle-2 {
+            display: none;
             z-index: -2;
         }
 
@@ -151,6 +152,14 @@ import Section from '@/components/Section.astro'
 
         .book-now-title, .book-now-text{
             width: 100%;
+            opacity: 1;
+        }
+
+        .book-links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
         }
     }
 
