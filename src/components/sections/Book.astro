@@ -1,4 +1,6 @@
 ---
+import {links} from '@info'
+
 import Section from '@/components/Section.astro'
 ---
 
@@ -6,10 +8,19 @@ import Section from '@/components/Section.astro'
 
     <div class="book-section" id="booknow">
         <div class="book-content">
-                <h1 class="book-now-title">Book here now!</h1>
-                <p class="book-now-text">Give yourself and your partner a peacefull and wonderful room to enjoy.</p>
-                <a href="https://www.airbnb.com/rooms/1156623638372071033?guests=1&adults=1&s=67&unique_share_id=2e6a92f4-6268-4770-9427-53f33c891c0c" target="_blank" rel="noopener noreferrer" class="book-now"> Book Now in Airbnb</a>
-        </div>
+            <h1 class="book-now-title">Book in here now!</h1>
+            <p class="book-now-text">Give yourself and your partner a peacefull and wonderful room to enjoy.</p>
+            <div class="book-links">
+                {
+                    Object.entries(links).map(([name, details]) => {
+                        const linkStyle = `background:${details.background}; color:${details.color};`;
+                        return (<a href={details.link} target="_blank" rel="noopener noreferrer" class="book-now" style={linkStyle}>
+                                    Book Now in {name}
+                                </a>)
+                    })
+                }
+            </div>
+        </div> 
         <div class="bg-circle-2"></div>
         <img src="src/icons/Apartment.png" class="book-now-img" alt="Apartment">
     </div>
@@ -62,9 +73,7 @@ import Section from '@/components/Section.astro'
         padding: 20px 40px;
         outline: none;
         border: none;
-        background: #FF5A60;
         text-transform: capitalize;
-        color: #fff;
         border-radius: 40px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -99,6 +108,18 @@ import Section from '@/components/Section.astro'
         background: var(--sphere-gradient-two);
         left: -125px;
         bottom: -100px
+    }
+
+    .book-links {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 30px;
+    }
+
+    .book-links img {
+        width: 50px;
+        height: 50px;
     }
 
     @media screen and (max-width: 996px) {

@@ -98,11 +98,13 @@
     "links" : {
         "Airbnb" : {
             "link" : "https://www.airbnb.com/rooms/1156623638372071033?guests=1&adults=1&s=67&unique_share_id=a1707dd3-d11e-4c70-9c3c-4d141053a074",
-            "icon" : "https://www.vectorlogo.zone/logos/airbnb/airbnb-icon.svg"
+            "background" : "#FF5A60",
+            "color" : "#fff"
         },
         "Vrbo" : {
             "link" : "https://www.vrbo.com/4177097?dateless=true",
-            "icon" : "https://media.united.com/assets/m/74bcaca278c65e82/original/vrbo-3x.png"
+            "background" : "#fff",
+            "color" : "#161813"
         }
     }
 }
